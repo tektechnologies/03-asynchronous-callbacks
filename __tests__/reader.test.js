@@ -9,7 +9,6 @@ const file1 = `${__dirname}/../data/file1.txt`;
 describe('reader', () => {
   //done tells jest that my test is finished. 
   it('reads the file', done => {
-    var paths = [file1];
     reader(
       ['./this/does/not/work'],
       (err, data) => {
