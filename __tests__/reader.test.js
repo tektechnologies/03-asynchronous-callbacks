@@ -28,13 +28,17 @@ describe('reader', () => {
       paths,
       (err, data) => {
         console.log(err);
-        expect(err).not.toBe(null);
+        expect(err).toBe(null);
         expect(data.length).toBe(1);
         //first file data as string
-        expect(data.length).toBe(paths.lenght);
-        expect(data[0]).toBe('file one');
+        expect(data.length).toBe(paths.length);
+        expect(data[0]).toBe('file One');
         //tells the 
         done();
       });
   });
+
+
+
+
 });
